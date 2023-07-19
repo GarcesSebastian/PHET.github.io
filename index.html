@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../project Pagina/font/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7a00fb587a.js" crossorigin="anonymous"></script>
+    <title>PHET</title>
+</head>
+<body>
+    
+
+<div class="contenedorAll">
+    <div class="contenedor">
+    <div class="fondo" id="fondo"></div>
+    <div class="medidor"></div>
+    <h3 class="posY">PosY:</h3>
+    <h3 class="posX">PosX:</h3>
+
+    <!--Contenedor mouseEvent-->
+            <span class="span-presion-circle" id="presion-circle"></span>
+
+
+            <!--1330PX - 460PX -->
+
+    <!--Base Visual-->
+    <div class="contenedor-base-visual" id="contenedor-base-visual">
+        <div class="span-1"></div> <!--span cesped-->
+        <div class="span-2"></div>
+        <div class="span-3"></div>
+        <div class="span-agua" id="span-agua"></div>
+        <div class="span-line-1 line"></div> <!--Span metros profundidad-->
+        <div class="span-line-2 line"></div>
+        <div class="span-line-3 line"></div>
+        <div class="span-line-4 line"></div>
+        <div class="span-metros-1 n-line">0m</div> <!--Span metros-->
+        <div class="span-metros-2 n-line">1m</div>
+        <div class="span-metros-3 n-line">2m</div>
+        <div class="span-metros-4 n-line">3m</div>
+
+    </div>
+
+    <!--Metros-->
+    <h3 class="metros" id="metros">Metros:</h3>
+    <!--<h3 class="posY" id="posY">Posición Y:</h3>
+    <h3 class="posX" id="PosX">Posición X:</h3>
+    <!--Parametros Superior-->
+    <div class="contenedor-parametros-superior">
+        <div class="presion" id="presion">
+            <!--<input type="button" value="20"  class="span-presion-circle" id="presion-circle">-->
+        </div>
+
+        <div class="atmosfera">
+            <label for="cuadricula" class="lbl-text"><i class="fa-solid fa-table-cells-large fa-xl" style="color: #000000;"></i></label>    
+            <input type="checkbox" name="cuadricula" id="cuadricula" class="cuadricula">
+                <label for="cuadricula" class="lbl"></label> 
+        </div>
+
+        <div class="atmosfera-off">
+            <div class="txt">
+                <h3 class="txt-atmosfera">Atmosfera</h3>
+            </div>
+            
+            <div class="interaccion-atmosfera-on">
+                <input type="checkbox" name="on" id="on" class="on" checked>
+                <label for="on">Encendido</label>
+            </div>
+
+           <div class="interaccion-atmosfera-off">
+                <input type="checkbox" name="off" id="off" class="off">
+                <label for="off">Apagado</label>                
+            </div>
+        </div>
+
+        <div class="unidades">
+            <h3 class="txt-unidades">Unidades</h3>
+
+            <div class="unidades-sistema-metrico">
+                <input type="checkbox" name="sistema-metrico" id="metrico" class="sistema-metrico" checked><label for="sistema-metrico">Sistema Métrico</label>
+
+            </div>
+
+            <div class="unidades-atmosferas">
+                <input type="checkbox" name="atmosferas-u" id="sistema-atmosfera" class="atmosferas-u"><label for="atmosferas-u">Atmosferas</label>
+            </div>
+
+            <div class="unidades-sistema-ingles">
+                <input type="checkbox" name="sistema-ingles" id="ingles" class="sistema-ingles"><label for="sistema-ingles">Sistema Ingles</label>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Densidad del Fluido-->
+    <div class="contenedor-parametros">
+        <div class="densidad-fluido">
+            <label for="densidad" class="labelDensidad">Densidad del fluido</label>
+            <input type="number" name="densidad" id="densidad" value="1000" class="densidad">
+            <label for="densidad" class="labelDensidad">kg/m³</label>
+        </div>
+        
+        <div class="gravedad-parametros">
+            <label for="gravedad" class="labelGravedad">Gravedad</label>
+            <input type="number" name="gravedad" id="gravedad" value="9.8" class="gravedad">
+            <label for="gravedad" class="labelGravedad">m/s2</label>
+        </div>
+
+        <div class="interaccion-parametros">
+            <input type="button" value="Cambiar" id="btn-interaccion-parametros" class="btn-interaccion-parametros">
+            <input type="button" value="Reiniciar" id="btn-interaccion-parametros-reset" class="btn-interaccion-parametros-reset">
+        </div>
+    </div>
+
+
+
+    <!--Tubo pbc askdjalkda-->
+    <div class="contenedor-tubo">
+        <div class="span-tubo-1"></div>
+        <div class="span-tubo-2"></div>
+        <div class="span-tubo-3"></div>
+        <div class="span-tubo-4"></div>
+        <input type="button" id="grifo" class="grifo">
+        <div class="span-tubo-agua" id="aguaGrifo"></div>
+    </div>
+
+    <!--Desague-->
+    <input type="button" value="x" class="desague" id="desague">
+</div>
+
+  <!--Rango del agua-->
+    
+  <div class="containerAll-range">
+
+    <div class="input-range">
+        <label for="rangeInput" class="rangeLabel" id="rangeLabelFirst">Metros:</label>
+        <input type="number" name="rangeInput" id="rangeInput" class="rangeInput" value="0" disabled>
+    </div>
+
+    <div class="range-container">
+        <!--<label for="range" class="rangeLine"></label>
+        <label for="range" class="rangeLine"></label>-->
+        <input type="range" min="0" value="0" max="3" step="0.1" id="range" class="range2" oninput="getValue()">
+
+      </div>
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

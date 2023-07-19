@@ -1,0 +1,203 @@
+675:
+ 3metros -> 363px
+ 2metros -> 463px
+ 
+Para 2.1:
+429px -> 0.1m
+
+Para 2.2:
+439px -> 0.2m
+
+Para 2.3:
+449px -> 0.3m
+
+Para 2.4:
+459.2px -> 0.4m
+
+Para 2.5:
+469px -> 0.5m
+
+Para 2.6:
+478.8px -> 0.6m
+
+Para 2.7:
+488.6px -> 0.7m
+
+Para 2.8:
+498.4px -> 0.8m
+
+Para 2.9:
+508.2px -> 0.9m
+
+Para 3.0:
+518px -> 1.0m
+
+ 1metro -> 561px
+
+Para 3.1:
+518 px -> 1.0m
+
+Para 3.2:
+527 px -> 1.1m
+
+Para 3.3:
+536 px -> 1.2m
+
+Para 3.4:
+545 px -> 1.3m
+
+Para 3.5:
+554 px -> 1.4m
+
+Para 3.6:
+563 px -> 1.5m
+
+Para 3.7:
+572 px -> 1.6m
+
+Para 3.8:
+581 px -> 1.7m
+
+Para 3.9:
+590 px -> 1.8m
+
+Para 4.0:
+599 px -> 1.9m
+
+Para 4.1:
+608 px -> 2.0m
+ 0metros -> 651px
+
+~43~
+
+569:
+ 3metros -> 306px
+ 2metros -> 391px
+ 1metro -> 473px
+ 0metros -> 549px
+
+
+
+
+
+        if(posicionY >= 320 && posicionY <= 329 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.1;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 330 && posicionY <= 339 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.2;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 340 && posicionY <= 349 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.3;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 350 && posicionY <= 359 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.4;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 360 && posicionY <= 369 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.5;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 370 && posicionY <= 379 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.6;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 380 && posicionY <= 389 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.7;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 390 && posicionY <= 399 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.8;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 400 && posicionY <= 409 && posicionX >= 200 && posicionX <= 731){
+          metros = 0.9;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 410 && posicionY <= 420 && posicionX >= 200 && posicionX <= 731){
+          metros = 1;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 421 && posicionY <= 429 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.1;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 430 && posicionY <= 439 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.2;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 440 && posicionY <= 449 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.3;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 450 && posicionY <= 459 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.4;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 460 && posicionY <= 469 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.5;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 470 && posicionY <= 479 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.6;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 480 && posicionY <= 489 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.7;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 490 && posicionY <= 499 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.8;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 500 && posicionY <= 509 && posicionX >= 200 && posicionX <= 731){
+          metros = 1.9;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 510 && posicionY <= 518 && posicionX >= 200 && posicionX <= 731){
+          metros = 2;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 519 && posicionY <= 527 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.1;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 528 && posicionY <= 436 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.2;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 537 && posicionY <= 545 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.3;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 546 && posicionY <= 554 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.4;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 555 && posicionY <= 563 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.5;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false; 
+        }else if(posicionY >= 564 && posicionY <= 572 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.6;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 573 && posicionY <= 581 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.7;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 582 && posicionY <= 590 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.8;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 591 && posicionY <= 599 && posicionX >= 200 && posicionX <= 731){
+          metros = 2.9;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }else if(posicionY >= 600 && posicionY <= 608 && posicionX >= 200 && posicionX <= 731){
+          metros = 3;
+          document.getElementById("metros").innerText = "Metros:"+metros;
+          Altura = false;
+        }
